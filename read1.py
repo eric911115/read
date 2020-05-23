@@ -16,3 +16,8 @@ for d in data:
 	if len(d) < 100:
 		new.append(d)
 print('一共有', len(new),'資料小於100')
+good =[]
+for g in data:
+	if 'good' in g:
+		good.append(g)
+print('共有', len(good), '筆資料提到good')
