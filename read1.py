@@ -11,13 +11,9 @@ sum_len = 0
 for d in data:
 	sum_len += len(d)
 print('平均長度為', sum_len / len(data))
-new =[]
-for d in data:
-	if len(d) < 100:
-		new.append(d)
+new =[d for d in data if len(d) < 100]
+
 print('一共有', len(new),'資料小於100')
-good =[]
-for g in data:
-	if 'good' in g:
-		good.append(g)
+good =[g for g in data if 'good' in g]
+
 print('共有', len(good), '筆資料提到good')
